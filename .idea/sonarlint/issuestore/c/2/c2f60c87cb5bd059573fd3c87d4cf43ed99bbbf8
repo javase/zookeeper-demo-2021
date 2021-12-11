@@ -1,0 +1,26 @@
+
+R	java:S106"9Replace this use of System.out or System.err by a logger.(®½†8Ë«³‹Ú/
+R
+java:S1874"7Remove this use of "NoSyncConnected"; it is deprecated.(—££Á8Û‚ùŠÚ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Œ¾×¨8ß¬÷ŠÚ/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(¾¬é÷ÿÿÿÿÿ8ñ‰²‹Ú/
+O
+java:S1874"/Remove this use of "Unknown"; it is deprecated.(ÂÄ‚™ùÿÿÿÿ8Û‚ùŠÚ/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(‰ü¾ÿúÿÿÿÿ8•°‹Ú/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(•ô±´8×±‹Ú/
+R	java:S106"9Replace this use of System.out or System.err by a logger.(ŸŸ‘%8Ô²‹Ú/
+I
+java:S1481")Remove this unused "path" local variable.(ÓÁúÿÿÿÿÿ8âÒöŠÚ/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(û‚‘ç8™öùŠÚ/
+`
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(¹™Âp8ªµ‹Ú/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(òõ´Ç8§«±‹Ú/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(Å­±¡ıÿÿÿÿ8§«±‹Ú/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ëÜ£½ùÿÿÿÿ8ÄŒ¯‹Ú/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(«Æö€8ß²°‹Ú/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Š­»Ä8éè¯‹Ú/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ù°ÙÉüÿÿÿÿ8š‚³‹Ú/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ÙÎŸùÿÿÿÿ8 ± ‹Ú/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(û‚‘ç8Îå ‹Ú/
+S	java:S106"9Replace this use of System.out or System.err by a logger.(³³¥²8©è°‹Ú/
+X	java:S106"9Replace this use of System.out or System.err by a logger.(ïç£¹ùÿÿÿÿ8˜ÖÆ‹Ú/
