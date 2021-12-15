@@ -23,7 +23,7 @@ public class WatcherCallBack implements Watcher, AsyncCallback.StringCallback, A
 
 	private static Logger logger = LoggerFactory.getLogger(WatcherCallBack.class);
 
-	private CountDownLatch latch = new CountDownLatch(1);
+	private CountDownLatch countDownLatch = new CountDownLatch(1);
 
 	private ZooKeeper zooKeeper;
 
@@ -36,7 +36,7 @@ public class WatcherCallBack implements Watcher, AsyncCallback.StringCallback, A
 		try {
 			logger.info("{} create node", threadName);
 			zooKeeper.create("/lock", threadName.getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.EPHEMERAL_SEQUENTIAL, this, threadName);
-			latch.await();
+			countDownLatch.await();
 		}
 		catch (InterruptedException e) {
 			e.printStackTrace();
@@ -89,10 +89,10 @@ public class WatcherCallBack implements Watcher, AsyncCallback.StringCallback, A
 		int i = children.indexOf(pathName.substring(1));
 		// 是不是第一个
 		if (0 == i) {
-			logger.info("{} I'm the first");
+			logger.info("{} I'm the first", threadName);
 			try {
 				zooKeeper.setData("/", threadName.getBytes(), -1);
-				latch.countDown();
+				countDownLatch.countDown();
 			}
 			catch (KeeperException e) {
 				e.printStackTrace();
